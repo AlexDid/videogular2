@@ -50,7 +50,6 @@
     "commitmsg": "validate-commit-msg",
     "prebuild": "npm run clean",
     "build": "ngc",
-    "postbuild": "npm test",
     "build:travis": "ngc",
     "postbuild:travis": "npm run test",
     "clean": "rimraf -rf ./src/**/*.js && rimraf -rf ./src/**/*.d.ts && rimraf -rf ./compiled",
