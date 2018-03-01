@@ -60,10 +60,10 @@ export class VgFullscreenAPI {
             },
             ios: {
                 // see 'Non-standard methods' section: https://developer.mozilla.org/ru/docs/DOM/Using_fullscreen_mode
-                enabled: 'webkitFullscreenEnabled',
+                enabled: 'fullscreenEnabled',
                 element: 'webkitFullscreenElement',
                 request: 'webkitRequestFullscreen',
-                exit: 'webkitCancelFullScreen',
+                exit: 'webkitExitFullscreen',
                 onchange: 'webkitendfullscreen', // Hack for iOS: webkitfullscreenchange it's not firing
                 onerror: 'webkitfullscreenerror'
             },
