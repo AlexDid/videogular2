@@ -64,7 +64,7 @@ export class VgFullscreenAPI {
                 element: 'webkitFullscreenElement',
                 request: 'webkitRequestFullscreen',
                 exit: 'webkitExitFullscreen',
-                onchange: 'webkitbeginfullscreen', // Hack for iOS: webkitfullscreenchange it's not firing
+                onchange: 'webkitendfullscreen', // Hack for iOS: webkitfullscreenchange it's not firing
                 onerror: 'webkitfullscreenerror'
             },
             ms: {
