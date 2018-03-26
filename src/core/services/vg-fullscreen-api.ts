@@ -168,7 +168,12 @@ export class VgFullscreenAPI {
 
         // Exit from native fullscreen
         if (this.isAvailable && this.nativeFullscreen) {
-            document[ this.polyfill.exit ]();
+            if (VgUtils.isiOSDevice()) {
+                this.medias.toArray()[0].elem[this.polyfill.exit]();
+                return;
+            }
+
+            document[this.polyfill.exit]();
         }
     }
 }
